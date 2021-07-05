@@ -1,38 +1,42 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-Component{
+    margin: 150px auto 0 auto;
+    width: 600px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.autocompletetext{
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px 1px rgba(0, 0, 0, 0.18);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.autocompletetext input {
+    width: 100%;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.73);
+    padding: 10px 5px;
+    box-sizing: border-box;
+    outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+.autocompletetext ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.autocompletetext ul::before{
+    content: "";
+}
+.autocompletetext li{
+    padding: 10px 5px;
+    cursor: pointer;
+}
+.autocompletetext li:hover {
+    background-color: rgba(128, 128, 128, 0.20);
 }
